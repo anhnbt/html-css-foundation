@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 Basic UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background-color: #f8d7da;
+        }
+
+        .right {
+            background-color: #d4edda;
+        }
+
+        .light-heading {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .right-heading {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .multiple-fonts {
+            font-size: 18px;
+        }
+
+        .font1 {
+            font-family: Arial, sans-serif;
+        }
+
+        .font2 {
+            font-family: 'Times New Roman', serif;
+        }
+
+        .font3 {
+            font-family: 'Courier New', monospace;
+        }
+
+        .font4 {
+            font-family: Georgia, serif;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="column left">
+        <h2 class="light-heading centered">❌ KHÔNG NÊN</h2>
+        <p class="multiple-fonts">❌ Sử dụng nhiều kiểu chữ khác nhau như: <span class="font1">Arial</span>, <span
+                class="font2">Times New Roman</span>, <span class="font3">Courier New</span>, <span class="font4">Georgia</span>.
+        </p>
+    </div>
+    <div class="column right">
+        <h2 class="right-heading centered">✔️ NÊN</h2>
+        <p>✔️ Sử dụng từ 2-3 kiểu chữ để giữ sự nhất quán.</p>
+    </div>
+</div>
+<div class="navigation centered">
+    <a href="02.html">Ví dụ tiếp theo</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.container {
+    transition: opacity 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+    opacity: 1;
+}
+.navigation a {
+    display: inline-block; /* Để nút có thể nhận diện như một khối */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    margin: 5px; /* Khoảng cách giữa các nút */
+    text-decoration: none; /* Xóa gạch chân */
+    background-color: #4caf50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border-radius: 5px; /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.navigation a:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua */
+}
+
+@media (max-width: 600px) {
+    .navigation a {
+        padding: 8px 16px; /* Điều chỉnh padding cho màn hình nhỏ */
+        font-size: 14px; /* Giảm kích thước chữ */
+    }
+}

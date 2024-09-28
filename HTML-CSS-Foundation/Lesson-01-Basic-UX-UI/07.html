@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 Basic UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background-color: #4caf50;
+        }
+
+        .right {
+            background-color: #fff;
+        }
+
+        .light-heading {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .right-heading {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .bad-color {
+            color: #ff0000;
+            font-size: 18px;
+        }
+
+        .normal-text {
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="column left">
+        <h2 class="light-heading centered">❌ KHÔNG NÊN</h2>
+        <p class="bad-color">❌ Sử dụng màu chữ đỏ trên nền xanh lá cây có thể làm cho văn bản khó đọc.</p>
+        <p class="bad-color">Nó có thể gây khó chịu cho người đọc và làm giảm khả năng tiếp nhận thông tin.</p>
+    </div>
+    <div class="column right">
+        <h2 class="right-heading centered">✔️ NÊN</h2>
+        <p>✔️ Sử dụng màu chữ đen trên nền trắng để dễ đọc hơn.</p>
+        <p class="normal-text">Màu sắc tương phản giúp cải thiện khả năng tiếp nhận thông tin.</p>
+    </div>
+</div>
+<div class="navigation centered">
+    <a href="06.html">Ví dụ trước</a>
+    <a href="08.html">Ví dụ tiếp theo</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 Basic UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background-color: #f8d7da;
+        }
+
+        .right {
+            background-color: #d4edda;
+        }
+
+        .light-heading {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .right-heading {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .tight {
+            letter-spacing: -1px;
+        }
+
+        .wide {
+            letter-spacing: 5px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="column left">
+        <h2 class="light-heading centered">❌ KHÔNG NÊN</h2>
+        <p class="tight">❌ Sử dụng khoảng cách chữ quá sát nhau.</p>
+        <p class="wide">❌ Sử dụng khoảng cách chữ quá thưa.</p>
+    </div>
+    <div class="column right">
+        <h2 class="right-heading centered">✔️ NÊN</h2>
+        <p>✔️ Sử dụng khoảng cách chữ hợp lý.</p>
+    </div>
+</div>
+<div class="navigation centered">
+    <a href="01.html">Ví dụ trước</a>
+    <a href="03.html">Ví dụ tiếp theo</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

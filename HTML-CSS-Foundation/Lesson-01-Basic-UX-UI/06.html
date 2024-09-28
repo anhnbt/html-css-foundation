@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 Basic UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background-image: url('lotus.jpg');
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        .right {
+            background-color: #fff;
+        }
+
+        .light-heading {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .right-heading {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .difficult-text {
+            font-size: 18px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .highlight {
+            color: #ffcccc;
+        }
+
+        .normal-text {
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="column left">
+        <h2 class="light-heading centered">❌ KHÔNG NÊN</h2>
+        <p class="difficult-text">❌ Nền hình ảnh có thể làm cho văn bản khó đọc, đặc biệt là khi màu chữ không tương phản đủ.</p>
+        <p class="difficult-text">Ví dụ: <span class="highlight">Chữ màu sáng trên nền sáng.</span></p>
+    </div>
+    <div class="column right">
+        <h2 class="right-heading centered">✔️ NÊN</h2>
+        <p>✔️ Sử dụng nền đồng nhất và màu chữ tương phản cao để dễ đọc hơn.</p>
+        <p class="normal-text">Ví dụ: Chữ màu đen trên nền trắng.</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 01 Basic UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            background-color: #f8d7da;
+        }
+
+        .right {
+            background-color: #d4edda;
+        }
+
+        .light-heading {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .right-heading {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .too-spaced {
+            line-height: 2.5;
+            font-size: 16px;
+        }
+
+        .just-right {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="column left">
+        <h2 class="light-heading centered">❌ KHÔNG NÊN</h2>
+        <p class="too-spaced">
+            Khoảng cách dòng quá lớn sẽ làm cho văn bản trở nên khó theo dõi.<br>
+            Người đọc phải di chuyển mắt rất nhiều để đọc.<br>
+            Điều này có thể làm giảm khả năng tiếp nhận thông tin.
+        </p>
+    </div>
+    <div class="column right">
+        <h2 class="right-heading centered">✔️ NÊN</h2>
+        <p class="just-right">
+            Khoảng cách dòng hợp lý giúp văn bản trở nên dễ đọc hơn.<br>
+            Người đọc có thể theo dõi nội dung một cách tự nhiên và thoải mái.<br>
+            Tăng cường khả năng tiếp nhận thông tin một cách hiệu quả.
+        </p>
+    </div>
+</div>
+<div class="navigation centered">
+    <a href="08.html">Ví dụ trước</a>
+    <a href="10.html">Ví dụ tiếp theo</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
